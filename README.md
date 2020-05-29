@@ -22,4 +22,4 @@ The `stlog.Log` interface exposes the following methods:
 
 ## Implementations
 
-* Zerolog: https://github.com/hashamali/stlog-zl 
+* [Zerolog](https://github.com/rs/zerolog): [stlogzl](https://github.com/hashamali/stlogzl) 
