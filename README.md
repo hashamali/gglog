@@ -1,4 +1,4 @@
-## stlog: Structure Logging Interface
+## sl: Structure Logging Interface
 
 A small opinionated log interface for Go for structured logging. Only supports 2 types of logs:
 
@@ -7,7 +7,7 @@ A small opinionated log interface for Go for structured logging. Only supports 2
 
 #### API
 
-The `stlog.Log` interface exposes the following methods:
+The `sl.Log` interface exposes the following methods:
 
 * `With(metadata interface{}) GGLog`: Provide a new logger that will include the metadata in subsequent logs.
 * `Info(message string)`: Log the provided message at the info level.
@@ -22,4 +22,4 @@ The `stlog.Log` interface exposes the following methods:
 
 ## Implementations
 
-* [Zerolog](https://github.com/rs/zerolog): [stlogzl](https://github.com/hashamali/stlogzl) 
+* [Zerolog](https://github.com/rs/zerolog): [slzl](https://github.com/hashamali/slzl)

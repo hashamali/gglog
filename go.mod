@@ -1,3 +1,3 @@
-module github.com/hashamali/stlog
+module github.com/hashamali/sl
 
 go 1.12
