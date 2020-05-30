@@ -1,4 +1,8 @@
-## sl: Structure Logging Interface
+## gsl: Structure Logging Interface
+[![godoc](https://godoc.org/github.com/hashamali/gsl?status.svg)](http://godoc.org/github.com/hashamali/gsl)
+[![sec](https://img.shields.io/github/workflow/status/hashamali/gsl/security?label=security&style=flat-square)](https://github.com/hashamali/gsl/actions?query=workflow%3Asecurity)
+[![go-report](https://goreportcard.com/badge/github.com/hashamali/gsl)](https://goreportcard.com/report/github.com/hashamali/gsl)
+[![license](https://badgen.net/github/license/hashamali/gsl)](https://opensource.org/licenses/MIT)
 
 A small opinionated log interface for Go for structured logging. Only supports 2 types of logs:
 
@@ -7,7 +11,7 @@ A small opinionated log interface for Go for structured logging. Only supports 2
 
 #### API
 
-The `sl.Log` interface exposes the following methods:
+The `gsl.Log` interface exposes the following methods:
 
 * `With(metadata interface{}) GGLog`: Provide a new logger that will include the metadata in subsequent logs.
 * `Info(message string)`: Log the provided message at the info level.
@@ -22,4 +26,4 @@ The `sl.Log` interface exposes the following methods:
 
 ## Implementations
 
-* [Zerolog](https://github.com/rs/zerolog): [slzl](https://github.com/hashamali/slzl)
+* [Zerolog](https://github.com/rs/zerolog): [gsl-zl](https://github.com/hashamali/gsl-zl)

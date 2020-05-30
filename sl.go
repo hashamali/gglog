@@ -1,4 +1,4 @@
-package sl 
+package gsl
 
 // Log is an interface for logging.
 type Log interface {
