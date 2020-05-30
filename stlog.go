@@ -1,4 +1,4 @@
-package stlog
+package sl 
 
 // Log is an interface for logging.
 type Log interface {
