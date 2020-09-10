@@ -13,17 +13,17 @@ A small opinionated log interface for Go for structured logging. Only supports 2
 
 The `gsl.Log` interface exposes the following methods:
 
-* `With(metadata interface{}) GGLog`: Provide a new logger that will include the metadata in subsequent logs.
+* `With(fields map[string]interface{}) GGLog`: Provide a new logger that will include the fields in subsequent logs.
 * `Info(message string)`: Log the provided message at the info level.
 * `Infof(format string, v ...interface{})`: Format and log the provided message at the info level.
-* `Infow(metadata interface{}, message string)`: A shortened version of `With(metadata).Info(message)`.
-* `Infofw(metadata interface{}, format string, v ...interface{})`: A shortened version of `With(metadata).Infof(message, v...)`.
+* `Infow(fields map[string]interface{}, message string)`: A shortened version of `With(fields).Info(message)`.
+* `Infofw(fields map[string]interface{}, format string, v ...interface{})`: A shortened version of `With(fields).Infof(message, v...)`.
 * `Error(message string)`: Log the provided message at the error level.
 * `Errorf(format string, v ...interface{})`: Format and log the provided message at the error level.
-* `Errorw(metadata interface{}, message string)`:  A shortened version of `With(metadata).Error(message)`.
-* `Errorfw(metadata interface{}, format string, v ...interface{})`: A shortened version of `With(metadata).Errorf(message, v...)`.
+* `Errorw(fields map[string]interface{}, message string)`:  A shortened version of `With(fields).Error(message)`.
+* `Errorfw(fields map[string]interface{}, format string, v ...interface{})`: A shortened version of `With(fields).Errorf(message, v...)`.
 * `V(verbosity int) bool`: Determine if the provided verbosity is supported.
 
 ## Implementations
 
-* [Zerolog](https://github.com/rs/zerolog): [gsl-zl](https://github.com/hashamali/gsl-zl)
+* [Zerolog](https://github.com/rs/zerolog): [gsl-zl](https://github.com/hashamali/gslzl)
